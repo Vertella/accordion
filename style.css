@@ -1,4 +1,59 @@
 html {
-  background: #f2f1f4;
+  background: #3c3c3c;
   color: #19171c;
+}
+
+#faq {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.accordion {
+  display: flex;
+  background-color: rgb(66, 0, 128);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.active, .accordion:hover {
+  background-color: rgb(84, 0, 162);
+}
+
+.panel {
+  padding: 0 20px;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 48%;
+  background-color: rgb(66, 0, 128);
+}
+
+.active {
+  max-height: 200px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel p {
+  width: 100%;
+  margin:0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
